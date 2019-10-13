@@ -33,6 +33,52 @@
     visibility: hidden;
 }
 
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+/* .rounded-pill{
+  width: 150px;
+  height: 20px;
+} */
+
+.side .list-group li a{
+  color: #707070;
+}
+
+.list-group li {
+ border: none;
+}
+.list-group li a{
+  text-decoration: none;
+}
+
+.goals .list-inline li a{
+  text-decoration: none;
+  color: #222529;
+
+}
+
+.goals .appoint li a{
+  font-weight: 600;
+  color: #707070;
+}
+
+.shadow .goals h2 {
+  color: #222529;
+}
+
+.goals .list-group li a{
+  color: #707070;
+}
+
 /*   
 .navbar-nav a {
     /* float: left;
@@ -108,6 +154,8 @@
   color: #f82249;
 }
 
+
+
 .about li.signup:hover a:before,
 .about li.signup.menu-active a:before {
   visibility: hidden;
@@ -119,6 +167,8 @@
 .btn-outline-danger:hover{
   background: #f82249;
 }
+
+
 /*--------------------------------------------------------------
 # Login / SignUP Section
 --------------------------------------------------------------*/  
