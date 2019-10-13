@@ -79,6 +79,13 @@
   color: #707070;
 }
 
+.serv .list-group li i {
+  color: #344676;
+}
+.serv .list-group li a {
+  color: #222529;
+}
+
 /*   
 .navbar-nav a {
     /* float: left;
