@@ -126,8 +126,25 @@
 }
 
 .page-footer {
-  background-color: #F9F9FA;
+  background-color: #2A4365;
 }
+.page-footer .container .row{
+  color: #e2e8f0;
+}
+
+.page-footer .row p{
+  color: #cbd5e0;
+}
+
+.page-footer .row ul li a{
+  color: #cbd5e0;
+}
+
+.page-footer .footer-copyright{
+  color: #cbd5e0;
+}
+
+
 
 
 
