@@ -25,6 +25,44 @@
     line-height: 1;
     font-size: 13px;
 }
+
+.circle-icon i {
+  background: none;
+	border: 3px solid #eee;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #CC253D;
+	display: inline-block;
+	font-size: 1.42857rem;
+	height: 1.42857rem;
+	padding: 10px;
+	width: 1.42857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+.circle-icon i:hover {
+  border-color: #CC253D;
+  /* background-color: #CC253D; */
+}
+
+.container .fa-color i{
+  color: #344676;
+}
+
+.container .fa-color a {
+  color: #CC253D;
+}
+
+.container .fa-color a i{
+  color: #CC253D;
+}
+
+.container .icon-color i{
+  color: #344676;
+}
   
 .navbar-nav li.signup a:hover {
     background: none;
