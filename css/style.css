@@ -28,6 +28,7 @@
 
 .circle-icon i {
   background: none;
+  text-align: center;
 	border: 3px solid #eee;
 	border-radius: 50%;
 	box-sizing: content-box;
@@ -48,6 +49,58 @@
   /* background-color: #CC253D; */
 }
 
+.dotted {
+  border:none;
+  border-top:1px dotted #D3D3D3;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:100%;
+}
+
+
+.pag-circle span {
+  background: none;
+  text-align: center;
+	border: 2px solid #eee;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #CC253D;
+	display: inline-block;
+	font-size: 1.12857rem;
+	height: 1.12857rem;
+	padding: 10px;
+	width: 1.12857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+.pag-circle span:hover {
+  /* border-color: #CC253D; */
+  background-color: #CC253D;
+  border: 2px solid #CC253D;
+  color: #eee;
+}
+
+.container .list-inline .list-inline-item a{
+  text-decoration: none;
+  color: #707070;
+}
+
+.container .list-inline .list-inline-item a:hover{
+  font-weight: 600;
+  /* color: #707070; */
+}
+
+.container .list-inline .list-inline-item span{
+  color: #707070;
+}
+
+
+
+
 .container .fa-color i{
   color: #344676;
 }
@@ -60,8 +113,53 @@
   color: #CC253D;
 }
 
+.comtainer .butt .about .btn:hover{
+  color:#f82249 ;
+}
+
 .container .icon-color i{
   color: #344676;
+}
+
+.container .my-5 .post-comm .form-group .post-btn{
+  color: #CC253D;
+}
+
+.container .row .blog .mx-auto h6{
+  color: #707070;
+}
+
+.container .row .blog .mx-auto h6{
+  font-size: 20px;
+}
+
+.container .row .blog .mx-auto h1{
+  font-size: 30px;
+}
+
+.container .row .col-sm .mx-auto .rounded img{
+  height: 350px;
+}
+
+.container .row .col-sm .mx-auto .img-card img{
+  height: 175px;
+}
+
+
+/* .banner{
+  background: #8ca7d3;
+} */
+
+.page-footer .container .row .mx-auto ul li a{
+  text-decoration: none;
+}
+
+.page-footer .container .row .mx-auto ul li a:hover{
+  color: #b5bec7;
+}
+
+.page-footer .footer-copyright a{
+  text-decoration: none;
 }
   
 .navbar-nav li.signup a:hover {
