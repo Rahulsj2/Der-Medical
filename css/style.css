@@ -44,6 +44,66 @@
 	transition: color 0.2s linear
 
 }
+
+.circle-iconn i {
+  background: none;
+  text-align: center;
+	border: 3px solid #eee;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #CC253D;
+	display: inline-block;
+	font-size: 1.42857rem;
+	height: 1.42857rem;
+	padding: 10px;
+	width: 1.42857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+
+.circle-blogg i {
+  background: none;
+  text-align: center;
+	border: 3px solid #eee;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #CC253D;
+	display: inline-block;
+	font-size: 2.42857rem;
+	height: 2.42857rem;
+	padding: 10px;
+	width: 2.42857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+/* .angle{
+  : none;
+} */
+
+.circle-blog i {
+  background: none;
+  text-align: center;
+	border: 3px solid #eee;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #CC253D;
+	display: inline-block;
+	font-size: 3.82857rem;
+	height: 3.82857rem;
+	padding: 10px;
+	width: 3.82857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
 .circle-icon i:hover {
   border-color: #CC253D;
   /* background-color: #CC253D; */
@@ -57,6 +117,107 @@
   height:1px;
   width:100%;
 }
+
+.circle-face i {
+  background: none;
+  text-align: center;
+	border: 2px solid #3B5998;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #000000;
+	display: inline-block;
+	font-size: 1.02857rem;
+	height: 1.02857rem;
+	padding: 10px;
+	width: 1.02857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+
+.circle-face i:hover {
+  background: #3B5998;
+  color: #fff;
+  /* background-color: #CC253D; */
+}
+
+.circle-tweet i {
+  background: none;
+  text-align: center;
+	border: 2px solid #188FD8;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #000000;
+	display: inline-block;
+	font-size: 1.02857rem;
+	height: 1.02857rem;
+	padding: 10px;
+	width: 1.02857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+
+.circle-tweet i:hover {
+  background: #188FD8;
+  color: #fff;
+  /* background-color: #CC253D; */
+}
+
+.circle-inst i {
+  background: none;
+  text-align: center;
+	border: 2px solid #188FD8;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #000000;
+	display: inline-block;
+	font-size: 1.02857rem;
+	height: 1.02857rem;
+	padding: 10px;
+	width: 1.02857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+
+.circle-inst i:hover {
+  background: #188FD8;
+  color: #fff;
+  /* background-color: #CC253D; */
+}
+
+.circle-pin i {
+  background: none;
+  text-align: center;
+	border: 2px solid #CC253D;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #000000;
+	display: inline-block;
+	font-size: 1.02857rem;
+	height: 1.02857rem;
+	padding: 10px;
+	width: 1.02857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	transition: color 0.2s linear
+
+}
+
+.circle-pin i:hover {
+  background: #CC253D;
+  color: #fff;
+  /* background-color: #CC253D; */
+}
+
 
 
 .pag-circle span {
@@ -99,7 +260,9 @@
 }
 
 
-
+.col-lg-8 .about .card-title .reply{
+  color: #CC253D;
+}
 
 .container .fa-color i{
   color: #344676;
