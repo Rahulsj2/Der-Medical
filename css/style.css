@@ -2,6 +2,20 @@
 /*--------------------------------------------------------------
 # Navigation Section
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans');
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 
 .navbar .container .navbar-brand{
@@ -64,6 +78,30 @@
 
 }
 
+.log-iconn i {
+  background: none;
+  text-align: center;
+	border: 3px solid #eee;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: #CC253D;
+	display: inline-block;
+	font-size: 0.52857rem;
+	height: 0.52857rem;
+	padding: 10px;
+	width: 0.52857rem;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  text-decoration: none;
+
+}
+.pass-change a{
+  text-decoration: none;
+  color: #344676;
+}
+
 .circle-blogg i {
   background: none;
   text-align: center;
@@ -117,6 +155,17 @@
   height:1px;
   width:100%;
 }
+
+.serv-dotted{
+  border:none;
+  border-top:2px dotted #f82249;
+  color:#fff;
+  background-color:#fff;
+  height:2px;
+  width:40%;
+  text-align: left;
+}
+
 
 .circle-face i {
   background: none;
@@ -218,6 +267,27 @@
   /* background-color: #CC253D; */
 }
 
+.corner{
+  border-radius: 0px 50px 50px 0px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  /* display: flex; */
+  overflow: hidden;
+}
+
+/* .corner a{
+  vertical-align: middle;
+  margin-bottom: 10000px;
+} */
+
+.corner a{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
 
 
 .pag-circle span {
@@ -620,5 +690,123 @@
     color: #777;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 1.3rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.service {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #e7e7e7;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service i {
+  font-size: 3.45rem;
+  margin: 1rem 0;
+}
+
+.service1 i,
+.service1 h4,
+.service1 .cta {
+  color: #344676;
+}
+
+.service1:hover {
+  border: 2px solid #344676;
+}
+
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+.service .cta {
+  align-self: flex-end;
+}
+
+@media all and (max-width:900px) {
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
