@@ -54,3 +54,119 @@ html {
       background-image: -webkit-linear-gradient(left, #5e42a6, #b74e91);
       background-image: -o-linear-gradient(left, #5e42a6, #b74e91);
       background-image: linear-gradient(to right, #5e42a6, #b74e91); }
+
+.searchbar .search {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #344676;
+  border-radius: 25%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  z-index: 4; }
+  .searchbar .search:hover {
+    cursor: pointer; }
+  .searchbar .search::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 8px;
+    right: 0;
+    bottom: 0;
+    left: 6px;
+    width: 6px;
+    height: 2px;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  .searchbar .search::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -3px;
+    right: 0;
+    bottom: 0;
+    left: -3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+
+.searchbar input {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: #344676;
+  color: #fff;
+  text-shadow: 0 0 8px #344676;
+  padding: 0 10px 0 20px;
+  border-radius: 30px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em; }
+  .searchbar input:hover {
+    cursor: pointer; }
+  .searchbar input:focus {
+    width: 215px;
+    opacity: 1;
+    cursor: text; }
+  .searchbar input:focus ~ .search {
+    right: -180px;
+    background: #151515;
+    z-index: 6; }
+    .searchbar input:focus ~ .search::before {
+      top: 0;
+      left: 0;
+      width: 25px; }
+    .searchbar input:focus ~ .search::after {
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 2px;
+      border: none;
+      background: white;
+      border-radius: 0%;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .searchbar input::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder; }
+  .searchbar input:-ms-input-placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder; }
+  .searchbar input::-ms-input-placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder; }
+  .searchbar input::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder; }
