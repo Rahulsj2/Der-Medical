@@ -548,7 +548,7 @@ html {
 }
 
 .bg-image {
-  background-image: url('/img/login.svg');
+  background-image: url('../img/login.svg');
   background-size: 50% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -556,7 +556,7 @@ html {
 }
 
 .bg-image1 {
-    background-image: url('/img/signup.svg');
+    background-image: url('../img/signup.svg');
     background-size: 80% 100%;
     background-position: center;
     background-repeat: no-repeat;
