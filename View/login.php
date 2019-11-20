@@ -62,6 +62,7 @@ if( isset($_POST['submit'])){
                                         echo '<div class="alert alert-danger" role="alert">';
                                         echo $_SESSION['error'];
                                         echo '</div>';
+                                        unset($_SESSION['error']);
                                     }
                                     ?>
                                 </div>

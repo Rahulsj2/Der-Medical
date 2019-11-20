@@ -1,9 +1,10 @@
 <?php 
-include('header.php');
-if(!isset($_SESSION['user'])){
-    header("Location: http://127.0.0.1/Web-Tech-Group/view/signup.php");
+include('admin_header.php');
+if(!isset($_SESSION['admin'])){
+    header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_signup.php");
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +33,8 @@ if(!isset($_SESSION['user'])){
             <Link rel="stylesheet" type="text/css" href="../css/input.css">
     
             <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="js/app.js"></script>
+            <script src="../vendor/jquery/jquery.min.js"></script>
+            <script src="../js/app.js"></script>
     </head>
     <body>
 
@@ -53,26 +54,26 @@ if(!isset($_SESSION['user'])){
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="dashboard.php"><i class="fa fa-user-cog"></i>Dashboard</a>
+                    <a href="admin_dashboard.php"><i class="fa fa-user-cog"></i>Dashboard</a>
                 </li>
                 
                 <li>
-                    <a href="diagnosis.php"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
+                    <a href="admin_diagnosis.php"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
                 </li>
                 <li>
-                    <a href="results.php"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
+                    <a href="admin_results.php"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
                 </li>
                 <li>
-                    <a href="prescription.php"><i class="fa fa-prescription-bottle"></i>Prescription</a>
+                    <a href="admin_prescription.php"><i class="fa fa-prescription-bottle"></i>Prescription</a>
                 </li>
                 <li>
-                    <a href="appointments.php"><i class="fa fa-calendar-day"></i>Appointments</a>
+                    <a href="admin_appointments.php"><i class="fa fa-calendar-day"></i>Appointments</a>
                 </li>
                 <li>
-                    <a href="addressbook.php"><i class="fa fa-address-book"></i>Address Book</a>
+                    <a href="admin_addressbook.php"><i class="fa fa-address-book"></i>Address Book</a>
                 </li>
                 <li>
-                    <a href="account_details.php"><i class="fa fa-user-alt"></i>Account Details</a>
+                    <a href="admin_account_details.php"><i class="fa fa-user-alt"></i>Account Details</a>
                 </li>
             </ul>
         </nav>
@@ -100,7 +101,7 @@ if(!isset($_SESSION['user'])){
                     </form>
                     <span class="navbar-text ml-auto">Friday 20th Sept, 2019</span>
                     <span class=" mr-auto ml-auto">Logout</span>
-                    <button type="button" onclick="location.href='logout.php'" id="" class="btn text-sidebar ml-lg-3 ">
+                    <button type="button" onclick="location.href='admin_logout.php'" id="" class="btn text-sidebar ml-lg-3 ">
                             <i class="fas fa-sign-out-alt"></i>
                             <span></span>
                     </button> 
@@ -109,41 +110,42 @@ if(!isset($_SESSION['user'])){
 
 
           
-             <h1 class="card-title ml-4" style="color: #344676;">Prescriptions</h1>
+             <h1 class="card-title ml-4" style="color: #344676;">Lab Results</h1>
+             
 
 
             <div class="services-gridd">
                 <div class="dash">
-                    <table class="table table-borderless">
+                    <table class="table">
                         <thead>
                             <tr>
-                            <th scope="col">Date </th>
-                            <th scope="col">View </th>
+                            <th scope="col">Order Date</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Download</th>
+                            <th scope="col">Result</th>
+                            <th scope="col">Physician</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>12/08/19</td>
-                                <td><i class="fa fa-file-pdf fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                                <td>Lorem Optum Prescription</td>
-                                <td><i class="fa fa-cloud-download-alt fa-2x" style="color:#8e94a3e5 ;"></i></td>
+                            <td>12/08/19</td>
+                            <td>Wet Mount</td>
+                            <td>Normal</td>
+                            <td>Dr. Amy Nelson</td>
                             </tr>
                             <tr>
-                                <td>12/08/19</td>
-                                <td><i class="fa fa-file-pdf fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                                <td>Lorem Optum Prescription</td>
-                                <td><i class="fa fa-cloud-download-alt fa-2x" style="color:#8e94a3e5 ;"></i></td>
+                            <td>12/08/19</td>
+                            <td>Gonorrhea</td>
+                            <td>Negative</td>
+                            <td>Dr. Amy Nelson</td>
                             </tr>
                             <tr>
-                                <td>12/08/19</td>
-                                <td><i class="fa fa-file-pdf fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                                <td>Lorem Optum Prescription</td>
-                                <td><i class="fa fa-cloud-download-alt fa-2x" style="color:#8e94a3e5 ;"></i></td>
+                            <td>12/08/19</td>
+                            <td>HIV (blood test)</td>
+                            <td>Negative</td>
+                            <td>Dr. Amy Nelson</td>
                             </tr>
                         </tbody>
-                    </table>
+                        </table>
                 </div>
             </div>
 

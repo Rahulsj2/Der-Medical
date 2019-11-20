@@ -1,9 +1,9 @@
 <?php 
 // include('server-validation.php');
-include('header.php');
+include('admin_header.php');
 
-if(isset($_SESSION['user'])){
-    header("Location: http://127.0.0.1/Web-Tech-Group/view/dashboard.php");
+if(isset($_SESSION['admin'])){
+    header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_dashboard.php");
 }
 
 if (isset($_POST['submit'])){
@@ -96,7 +96,7 @@ if (isset($_POST['submit'])){
                                 </div>
                                 <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" name="submit" type="submit">Sign up</button>
                                 <div class="text-center">
-                                    <a class="small" href="login.php">Already have an account? Login</a>
+                                    <a class="small" href="login.html">Already have an account? Login</a>
                                 </div>
                             </form>
                         </div>

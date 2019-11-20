@@ -1,9 +1,17 @@
 <?php 
-include('header.php');
-if(!isset($_SESSION['user'])){
-    header("Location: http://127.0.0.1/Web-Tech-Group/view/signup.php");
-
+// include('server-validation.php');
+include('admin_header.php');
+if(isset($_SESSION['admin'])){
+    header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_dashboard.php");
 }
+
+if(isset($_GET['active']) || isset($_POST['submit']) ){
+    $tk = isset($_POST['submit']) ? $_POST['active'] : $_GET['active'];
+    $id = isset($_POST['submit']) ? $_POST['id'] : $_GET['id'] ;
+
+    $user->activate($tk,$id);
+}
+
 
 ?>
 
@@ -41,36 +49,37 @@ if(!isset($_SESSION['user'])){
 
     <body>
 
-
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class=" d-none d-md-flex col-lg-6 bg-image1"></div>
+                <div class=" d-none d-md-flex col-lg-6 bg-image"></div>
                 <div class="col-md-8 col-lg-6">
                     <div class="login d-flex align-items-center py-5">
                     <div class="container">
                         <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">Change Password</h3>
-                            <form  action="post">
+                            <h3 class="login-heading mb-4">We have sent you an email kindly activate your account</h3>
+                            <form method="post">
                                 <div class="form-label-group">
-                                    <input type="password" name="current_password" id="current_password" class="form-control" placeholder="Current Password" required autofocus>
-                                    <span id="current_password_error" class ="ml-3 mt-2" style="color: red;"></span>
-                                    <label for="current_password">Current Password</label>
+                                    <?php 
+                                    if(isset($_SESSION['error'])){ 
+                                        echo '<div class="alert alert-danger" role="alert">';
+                                        echo $_SESSION['error'];
+                                        echo '</div>';
+                                        unset($_SESSION['error']);
+                                    }
+                                    ?>
                                 </div>
-
                                 <div class="form-label-group">
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="New Password" required>
-                                    <span id="password_error" class ="ml-3 mt-2" style="color: red;"></span>
-                                    <label for="password">New Password</label>
+                                    <input type="text" name="active" id="active" class="form-control" placeholder="Activation Code" required autofocus>
+                                    <label for="active">Activation Code</label>
                                 </div>
                 
                                 <div class="form-label-group">
-                                    <input type="password" name="confirm_password" id="confirmPassword" class="form-control" placeholder="Retype New Password" required>
-                                    <span id="confirm_password_error" class ="ml-3 mt-2" style="color: red;"></span>
-                                    <label for="confirmPassword">Retype New Password</label>
+                                    <input type="hidden" name="id" class="form-control" value="<?php echo $_SESSION['id'] ?>">
                                 </div>
-                                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Save</button>
-                            </form>
+
+                                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" name="submit" type="submit">Activate</button>
+
                         </div>
                         </div>
                     </div>
@@ -78,6 +87,7 @@ if(!isset($_SESSION['user'])){
                 </div>
             </div>
         </div>
+
 
 
     </body>

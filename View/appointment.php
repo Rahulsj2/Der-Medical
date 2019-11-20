@@ -53,26 +53,26 @@ if(!isset($_SESSION['user'])){
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="dashboard.html"><i class="fa fa-user-cog"></i>Dashboard</a>
+                    <a href="dashboard.php"><i class="fa fa-user-cog"></i>Dashboard</a>
                 </li>
                 
                 <li>
-                    <a href="diagnosis.html"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
+                    <a href="diagnosis.php"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
                 </li>
                 <li>
-                    <a href="results.html"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
+                    <a href="results.php"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
                 </li>
                 <li>
-                    <a href="prescription.html"><i class="fa fa-prescription-bottle"></i>Prescription</a>
+                    <a href="prescription.php"><i class="fa fa-prescription-bottle"></i>Prescription</a>
                 </li>
                 <li>
-                    <a href="appointments.html"><i class="fa fa-calendar-day"></i>Appointments</a>
+                    <a href="appointments.php"><i class="fa fa-calendar-day"></i>Appointments</a>
                 </li>
                 <li>
-                    <a href="addressbook.html"><i class="fa fa-address-book"></i>Address Book</a>
+                    <a href="addressbook.php"><i class="fa fa-address-book"></i>Address Book</a>
                 </li>
                 <li>
-                    <a href="account_details.html"><i class="fa fa-user-alt"></i>Account Details</a>
+                    <a href="account_details.php"><i class="fa fa-user-alt"></i>Account Details</a>
                 </li>
             </ul>
         </nav>

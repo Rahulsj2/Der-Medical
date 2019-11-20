@@ -1,11 +1,10 @@
 <?php 
-include('header.php');
-if(!isset($_SESSION['user'])){
-    header("Location: http://127.0.0.1/Web-Tech-Group/view/signup.php");
-
+include('admin_header.php');
+if(!isset($_SESSION['admin'])){
+    header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_signup.php");
 }
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

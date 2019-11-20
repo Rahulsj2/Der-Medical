@@ -7,25 +7,25 @@
  *@version 1.1
  */
 
- class User extends Database
+ class Admin extends Database
  {
 
     public function register($data){
         $password = password_hash($data['password'],PASSWORD_DEFAULT);
         $token = bin2hex(random_bytes(4));
-        $query = "SELECT * FROM Patient WHERE email='$data[email]'";
+        $query = "SELECT * FROM Staff WHERE email='$data[email]'";
         $run = $this->query($query);
         if ($run->num_rows > 0){
             $_SESSION['error'] = "Email Already Exist";
         }else{
-            $query = "INSERT INTO Patient(username,password,email,token) VALUES('$data[username]','$password','$data[email]','$token')";
+            $query = "INSERT INTO Staff(username,password,email,token) VALUES('$data[username]','$password','$data[email]','$token')";
             // echo $query;return true;
             $run = $this->query($query);
             if ($run){
                 $user = $this->getUser($data['email']);
                 $_SESSION['id'] = $user->user_id;
                 $this->sendMail($user->email,$user->user_id,$user->token);
-                header("Location: http://127.0.0.1/Web-Tech-Group/view/login.php");
+                header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_login.php");
             }else{
                 $_SESSION['error'] = "Something went wrong.";
             }
@@ -33,7 +33,7 @@
     }
 
     public function getUser($email){
-        $query = "SELECT * FROM Patient WHERE email='$email'";
+        $query = "SELECT * FROM Staff WHERE email='$email'";
         $run = $this->query($query);
         $row = $run->fetch_object();
         return $row;
@@ -59,8 +59,7 @@
     }
 
     // public function activate($token,$id){
-    //     $query = "UPDATE Patient SET active=1 WHERE patient_id='$id' AND token='$token'";
-    //     echo $query;return true;
+    //     $query = "UPDATE Staff SET active=1 WHERE user_id='$id' AND token='$token'";
     //     $run = $this->query($query);
     //     if ($run){
     //         $user = $this->getUserById($id);
@@ -72,7 +71,7 @@
     // }
 
     public function getUserById($id){
-        $query = "SELECT * FROM Patient WHERE patient_id='$id'";
+        $query = "SELECT * FROM Staff WHERE staff_id='$id'";
         $run = $this->query($query);
         $row = $run->fetch_object();
         return $row;
@@ -80,17 +79,17 @@
 
 
     public function auth($email,$password){
-        $query = "SELECT patient_id FROM Patient WHERE email='$email' ";
+        $query = "SELECT staff_id FROM Staff WHERE email='$email'";
         $run = $this->query($query);
         if ($run->num_rows > 0){
             $row = $run->fetch_object();
-            $query = "SELECT * FROM Patient WHERE patient_id='$row->patient_id' ";
+            $query = "SELECT * FROM Staff WHERE staff_id='$row->staff_id' ";
             $run = $this->query($query);
             $row = $run->fetch_object();
 
             if (password_verify($password, $row->password)){
-                $_SESSION['user'] = $row;
-                header("Location: http://127.0.0.1/Web-Tech-Group/view/dashboard.php");
+                $_SESSION['admin'] = $row;
+                header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_dashboard.php");
             }else{
                 $_SESSION['error'] = "Password is not valid";
             }

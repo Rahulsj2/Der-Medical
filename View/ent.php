@@ -40,32 +40,32 @@ include('header.php');
         ============================-->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="index2.html"> DER</a>
+                <a class="navbar-brand" href="index.php"> DER</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="nav navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item menu-active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link" href="services.php">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <?php 
                             if(!isset($_SESSION['user'])){
                         ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link" href="login.php">Login</a>
                         </li>
                         <li class="nav-item signup">
-                            <a class="nav-link hov" href="signup.html">Signup</a>
+                            <a class="nav-link hov" href="signup.php">Signup</a>
                         </li>
                         <?php }else {?>
                             <li class="nav-item signup">
@@ -118,7 +118,7 @@ include('header.php');
                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                                 </p>
-                                <button type="button" class=" btn btn-outline-danger">Book Appointment</button>
+                                <button type="button"  onclick="location.href='appointment.php'" class=" btn btn-outline-danger">Book Appointment</button>
 
                             </div>
                         </div>
@@ -134,12 +134,12 @@ include('header.php');
                                         <h5 class="card-title mt-2 mb-4" style="color: #f82249;">More Services</h5>
                                     </div>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="dental.html"> <i class="fa fa-tooth fa-1x mr-4 text-center"></i>Dentistry</a></li>
-                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="cardio.html"> <i class="fa fa-heartbeat fa-1x mr-4 text-center"></i>Cardilogy </a></li>
-                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="dermatology.html"> <i class="fa fa-allergies fa-1x mr-4 text-center"></i>Dermatology</a></li>
-                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="lab.html"> <i class="fa fa-vial fa-1x mr-4 text-center"></i>Laboratory</a></li>
-                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="neuro.html"> <i class="fa fa-brain fa-1x mr-4 text-center"></i>Neurosurgery</a></li>
-                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="physio.html"> <i class="fa fa-wheelchair fa-1x mr-4 text-center"></i>Physiotherapy</a></li>
+                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="dental.php"> <i class="fa fa-tooth fa-1x mr-4 text-center"></i>Dentistry</a></li>
+                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="cardio.php"> <i class="fa fa-heartbeat fa-1x mr-4 text-center"></i>Cardilogy </a></li>
+                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="dermatology.php"> <i class="fa fa-allergies fa-1x mr-4 text-center"></i>Dermatology</a></li>
+                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="lab.php"> <i class="fa fa-vial fa-1x mr-4 text-center"></i>Laboratory</a></li>
+                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="neuro.php"> <i class="fa fa-brain fa-1x mr-4 text-center"></i>Neurosurgery</a></li>
+                                        <li class="list-group-item my-2 py-2"> <a class=" hov" href="physio.php"> <i class="fa fa-wheelchair fa-1x mr-4 text-center"></i>Physiotherapy</a></li>
                                     </ul>
                                 </div>
                             </div>    
@@ -162,7 +162,7 @@ include('header.php');
                                 <h5 class="card-title mt-3 pt-3">Pharmarcy</h5>
                                 <p class="card-text mb-3 pb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <!-- <a href="#" class="cta">Read More <span class="ti-angle-right"></a> -->
-                                <a href="pharmarcy.html" class="card-text small mb-3" style="color: #CC253D; text-decoration: none;">Read More<span class="new fa fa-arrow-right ml-2"></span></a>
+                                <a href="pharmarcy.php" class="card-text small mb-3" style="color: #CC253D; text-decoration: none;">Read More<span class="new fa fa-arrow-right ml-2"></span></a>
                             </div>
                         
                             <div class="service service1">
@@ -170,7 +170,7 @@ include('header.php');
                                 <h5 class="card-title mt-3 pt-3">Laboratory</h5>
                                 <p class="card-text mb-3 pb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <!-- <a href="#" class="cta">Read More <span class="ti-angle-right"></a> -->
-                                <a href="lab.html" class="card-text small mb-3" style="color: #CC253D; text-decoration: none;">Read More<span class="new fa fa-arrow-right ml-2"></span></a>
+                                <a href="lab.php" class="card-text small mb-3" style="color: #CC253D; text-decoration: none;">Read More<span class="new fa fa-arrow-right ml-2"></span></a>
                             </div>
                         
                             <div class="service service1">
@@ -178,7 +178,7 @@ include('header.php');
                                 <h5 class="card-title mt-3 pt-3">Neurosurgery</h5>
                                 <p class="card-text mb-3 pb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <!-- <a href="#" class="cta">Read More <span class="ti-angle-right"></a> -->
-                                <a href="neuro.html" class="card-text small mb-3" style="color: #CC253D; text-decoration: none;">Read More<span class="new fa fa-arrow-right ml-2"></span></a>
+                                <a href="neuro.php" class="card-text small mb-3" style="color: #CC253D; text-decoration: none;">Read More<span class="new fa fa-arrow-right ml-2"></span></a>
                             </div>
                         </div>
                     </div>
@@ -211,16 +211,16 @@ include('header.php');
                 
                         <ul class="list-unstyled ">
                             <li>
-                            <a class="font-weight-light" href="blog.html">Blog</a>
+                            <a class="font-weight-light" href="blog.php">Blog</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="index2.html">Home</a>
+                            <a class="font-weight-light" href="index2.php">Home</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="contact.html">Contact</a>
+                            <a class="font-weight-light" href="contact.php">Contact</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="services.html">Services</a>
+                            <a class="font-weight-light" href="services.php">Services</a>
                             </li>
                         </ul>
             
@@ -274,7 +274,7 @@ include('header.php');
         
             <hr>
             <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="index2.html"> DER Medical Center</a>
+            <a href="index2.php"> DER Medical Center</a>
             </div>
         
         </footer>

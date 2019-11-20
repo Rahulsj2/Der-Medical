@@ -1,8 +1,7 @@
-
 <?php 
-include('header.php');
-if(!isset($_SESSION['user'])){
-    header("Location: http://127.0.0.1/Web-Tech-Group/view/signup.php");
+include('admin_header.php');
+if(!isset($_SESSION['admin'])){
+    header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_signup.php");
 }
 ?>
 
@@ -56,26 +55,26 @@ if(!isset($_SESSION['user'])){
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="dashboard.php"><i class="fa fa-user-cog"></i>Dashboard</a>
+                    <a href="admin_dashboard.php"><i class="fa fa-user-cog"></i>Dashboard</a>
                 </li>
                 
                 <li>
-                    <a href="diagnosis.php"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
+                    <a href="admin_diagnosis.php"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
                 </li>
                 <li>
-                    <a href="results.php"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
+                    <a href="admin_results.php"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
                 </li>
                 <li>
-                    <a href="prescription.php"><i class="fa fa-prescription-bottle"></i>Prescription</a>
+                    <a href="admin_prescription.php"><i class="fa fa-prescription-bottle"></i>Prescription</a>
                 </li>
                 <li>
-                    <a href="appointments.php"><i class="fa fa-calendar-day"></i>Appointments</a>
+                    <a href="admin_appointments.php"><i class="fa fa-calendar-day"></i>Appointments</a>
                 </li>
                 <li>
-                    <a href="addressbook.php"><i class="fa fa-address-book"></i>Address Book</a>
+                    <a href="admin_addressbook.php"><i class="fa fa-address-book"></i>Address Book</a>
                 </li>
                 <li>
-                    <a href="account_details.php"><i class="fa fa-user-alt"></i>Account Details</a>
+                    <a href="admin_account_details.php"><i class="fa fa-user-alt"></i>Account Details</a>
                 </li>
             </ul>
         </nav>
@@ -102,7 +101,7 @@ if(!isset($_SESSION['user'])){
                 </form>
                 <span class="navbar-text ml-auto">Friday 20th Sept, 2019</span>
                 <span class=" mr-auto ml-auto">Logout</span>
-                <button type="button" onclick="location.href='logout.php'" id="" class="btn text-sidebar ml-lg-3 ">
+                <button type="button" onclick="location.href='admin_logout.php'" id="" class="btn text-sidebar ml-lg-3 ">
                         <i class="fas fa-sign-out-alt"></i>
                         <span></span>
                 </button> 
@@ -113,7 +112,7 @@ if(!isset($_SESSION['user'])){
                 <div class="servicee">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h1 class="card-title ml-5 my-4" style="color:rgb(253, 125, 138) ;">Weclome <?php echo $_SESSION['user']->username; ?></h1>
+                            <h1 class="card-title ml-5 my-4" style="color:rgb(253, 125, 138) ;">Weclome Dr. <?php echo $_SESSION['admin']->username; ?></h1>
                             <p class="m pb-0 ml-5">We are a a full-service, non-profit community hospital, offering comprehensive medical, 
                                 surgical and therapeutic services.
                             </p>

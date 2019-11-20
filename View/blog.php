@@ -40,32 +40,32 @@ include('header.php');
         ============================-->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="index2.html"> DER</a>
+                <a class="navbar-brand" href="index.php"> DER</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="nav navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item menu-active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link" href="services.php">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                            <a class="nav-link" href="blog.php">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <?php 
                             if(!isset($_SESSION['user'])){
                         ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link" href="login.php">Login</a>
                         </li>
                         <li class="nav-item signup">
-                            <a class="nav-link hov" href="signup.html">Signup</a>
+                            <a class="nav-link hov" href="signup.php">Signup</a>
                         </li>
                         <?php }else {?>
                             <li class="nav-item signup">
@@ -142,7 +142,7 @@ include('header.php');
                                         <div class="blog_card__info">
                                             <span class="blog_card__category">16th November, 2019</span>
                                             <h3 class="blog_card__title">Heart Health</h3>
-                                            <span class="blog_card__by"><a href="heart-blog.html" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
+                                            <span class="blog_card__by"><a href="heart-blog.php" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
                                         </div>
                                     </article>
                                       
@@ -172,7 +172,7 @@ include('header.php');
                                         <div class="blog_card__info">
                                             <span class="blog_card__category"> 5th November, 2019</span>
                                             <h3 class="blog_card__title">Drug Abuse</h3>
-                                            <span class="blog_card__by"><a href="drug-blog.html" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
+                                            <span class="blog_card__by"><a href="drug-blog.php" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
                                         </div>
                                     </article> 
                                          
@@ -201,7 +201,7 @@ include('header.php');
                                         <div class="blog_card__info">
                                             <span class="blog_card__category">10th October, 2019</span>
                                             <h3 class="blog_card__title">Blood Pressure</h3>
-                                            <span class="blog_card__by"><a href="med-blog.html" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
+                                            <span class="blog_card__by"><a href="med-blog.php" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
                                         </div>
                                     </article>       
                             </section>
@@ -233,7 +233,7 @@ include('header.php');
                         <div class="blog_card__info">
                             <span class="blog_card__category">26th October, 2019</span>
                             <h3 class="blog_card__title">Cook Books</h3>
-                            <span class="blog_card__by"><a href="food-blog.html" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
+                            <span class="blog_card__by"><a href="food-blog.php" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
                         </div>
                     </article>       
                     <article class="blog_card blog_card--5">
@@ -261,7 +261,7 @@ include('header.php');
                         <div class="blog_card__info">
                             <span class="blog_card__category">6th April, 2019</span>
                             <h3 class="blog_card__title">Travel</h3>
-                            <span class="blog_card__by"><a href="travel-blog.html" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
+                            <span class="blog_card__by"><a href="travel-blog.php" style="color:#f82249; text-decoration: none;" class="blog_card__author" title="author">Read Now</a></span>
                         </div>
                     </article>       
                     
@@ -362,16 +362,16 @@ include('header.php');
                 
                         <ul class="list-unstyled ">
                             <li>
-                            <a class="font-weight-light" href="blog.html">Blog</a>
+                            <a class="font-weight-light" href="blog.php">Blog</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="index2.html">Home</a>
+                            <a class="font-weight-light" href="index2.php">Home</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="contact.html">Contact</a>
+                            <a class="font-weight-light" href="contact.php">Contact</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="services.html">Services</a>
+                            <a class="font-weight-light" href="services.php">Services</a>
                             </li>
                         </ul>
             
@@ -425,7 +425,7 @@ include('header.php');
         
             <hr>
             <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="index2.html"> DER Medical Center</a>
+            <a href="index2.php"> DER Medical Center</a>
             </div>
         
         </footer>

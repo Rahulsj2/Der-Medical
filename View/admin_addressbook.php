@@ -1,7 +1,7 @@
 <?php 
-include('header.php');
-if(!isset($_SESSION['user'])){
-    header("Location: http://127.0.0.1/Web-Tech-Group/view/signup.php");
+include('admin_header.php');
+if(!isset($_SESSION['admin'])){
+    header("Location: http://127.0.0.1/Web-Tech-Group/view/admin_signup.php");
 }
 ?>
 
@@ -29,7 +29,7 @@ if(!isset($_SESSION['user'])){
             <!-- Main Style Sheet-->
             <Link rel="stylesheet" type="text/css" href="../css/style.css">
             <Link rel="stylesheet" type="text/css" href="../css/styles.css">
-            <Link rel="stylesheet" type="text/css" href="../css/input.css">
+            <Link rel="stylesheet" type="text/css" href="../css/n-input.css">
     
             <!-- Bootstrap core JavaScript-->
             <script src="../vendor/jquery/jquery.min.js"></script>
@@ -53,26 +53,26 @@ if(!isset($_SESSION['user'])){
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="dashboard.php"><i class="fa fa-user-cog"></i>Dashboard</a>
+                    <a href="admin_dashboard.php"><i class="fa fa-user-cog"></i>Dashboard</a>
                 </li>
                 
                 <li>
-                    <a href="diagnosis.php"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
+                    <a href="admin_diagnosis.php"><i class="fa fa-file-medical-alt"></i>Medical Records</a>
                 </li>
                 <li>
-                    <a href="results.php"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
+                    <a href="admin_results.php"><i class="fa fa-file-medical-alt"></i>Lab Results</a>
                 </li>
                 <li>
-                    <a href="prescription.php"><i class="fa fa-prescription-bottle"></i>Prescription</a>
+                    <a href="admin_prescription.php"><i class="fa fa-prescription-bottle"></i>Prescription</a>
                 </li>
                 <li>
-                    <a href="appointments.php"><i class="fa fa-calendar-day"></i>Appointments</a>
+                    <a href="admin_appointments.php"><i class="fa fa-calendar-day"></i>Appointments</a>
                 </li>
                 <li>
-                    <a href="addressbook.php"><i class="fa fa-address-book"></i>Address Book</a>
+                    <a href="admin_addressbook.php"><i class="fa fa-address-book"></i>Address Book</a>
                 </li>
                 <li>
-                    <a href="account_details.php"><i class="fa fa-user-alt"></i>Account Details</a>
+                    <a href="admin_account_details.php"><i class="fa fa-user-alt"></i>Account Details</a>
                 </li>
             </ul>
         </nav>
@@ -92,12 +92,12 @@ if(!isset($_SESSION['user'])){
                 </button>
                 <!-- <span id="navbarCollapse"> -->
                     <a class="navbar-brand ml-2 mr-auto">Dashboard</a>
-                    <form class="form-inline ml-auto mr-auto">
+                    <!-- <form class="form-inline ml-auto mr-auto">
                         <div class="container">
                             <input type="text" placeholder="Search...">
                             <div class="search"></div>
                         </div>
-                    </form>
+                    </form> -->
                     <span class="navbar-text ml-auto">Friday 20th Sept, 2019</span>
                     <span class=" mr-auto ml-auto">Logout</span>
                     <button type="button" onclick="location.href='logout.php'" id="" class="btn text-sidebar ml-lg-3 ">
@@ -109,82 +109,46 @@ if(!isset($_SESSION['user'])){
 
 
           
-             <h1 class="card-title ml-4" style="color: #344676;">Medical Records</h1>
+             <h1 class="card-title ml-4" style="color: #344676;">Address Book</h1>
 
 
             <div class="services-gridd">
                 <div class="dash">
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                            <th scope="col">Date </th>
-                            <th scope="col">View </th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Download</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>12/08/19</td>
-                            <td><i class="fa fa-file-pdf fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                            <td>Lorem Optum Diagnosis</td>
-                            <td><i class="fa fa-cloud-download-alt fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                            </tr>
-                            <tr>
-                            <td>12/08/19</td>
-                            <td><i class="fa fa-file-pdf fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                            <td>Lorem Optum Diagnosis</td>
-                            <td><i class="fa fa-cloud-download-alt fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                            </tr>
-                            <tr>
-                            <td>12/08/19</td>
-                            <td><i class="fa fa-file-pdf fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                            <td>Lorem Optum Diagnosis</td>
-                            <td><i class="fa fa-cloud-download-alt fa-2x" style="color:#8e94a3e5 ;"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <form class="col-lg-12  ">
+                        <div class="row my-2 py-2">
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone No">
+                            </div>
+                        </div>
+                        <div class="row my-1 py-1">
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="row my-2 py-2">
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Region">
+                            </div>
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="City">
+                            </div>
+                        </div>
+                        <div class="row my-2 py-2">
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-danger shadow">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
 
 
-<!-- 
-            <div class="row">
-                    <div class="col-lg-4">
-                        <div class="services-gridd">
-                            <div class="dash-h" style="background-color:#344676 ;">
-                                
-                                <ul class="list-group list-group-flush" >
-                                    <li class="list-group-item" style="background-color:#344676 ; color: #fff;">Drink Water</li>
-                                    <-- <li class="list-group-item">Dapibus ac facilisis in</li> --
-                                    <-- <li class="list-group-item">Vestibulum at eros</li> --
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="services-gridd">
-                            <div class="dash-h" style="background-color:#00798C ;">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="background-color:#00798C ; color: #fff;">Exercise regularly</li>
-                                    <-- <li class="list-group-item">Dapibus ac facilisis in</li> --
-                                    <-- <li class="list-group-item">Vestibulum at eros</li> --
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="services-gridd">
-                            <div class="dash-h"  style="background-color:#598392 ;">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="background-color:#598392 ; color: #fff;">Eat Everyday</li>
-                                    <-- <li class="list-group-item">Dapibus ac facilisis in</li> 
-                                    <-- <li class="list-group-item">Vestibulum at eros</li> -
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
 
         </div>
