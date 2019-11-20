@@ -877,23 +877,23 @@ height: 100%;
 }
 
 .blog_card--1 .blog_card__img, .blog_card--1 .blog_card__img--hover {
-    background-image: url('/img/heart.png');
+    background-image: url('../img/heart.png');
 }
 
 .blog_card--2 .blog_card__img, .blog_card--2 .blog_card__img--hover {
-    background-image: url('/img/pills.png');
+    background-image: url('../img/pills.png');
 }
 
 .blog_card--3 .blog_card__img, .blog_card--3 .blog_card__img--hover {
-  background-image: url('/img/doc.png');
+  background-image: url('../img/doc.png');
 }
 
 .blog_card--4 .blog_card__img, .blog_card--4 .blog_card__img--hover {
-  background-image: url('/img/food.png');
+  background-image: url('../img/food.png');
 }
 
 .blog_card--5 .blog_card__img, .blog_card--5 .blog_card__img--hover {
-  background-image: url('/img/tree.png');
+  background-image: url('../img/tree.png');
 }
 
 .blog_card__like {

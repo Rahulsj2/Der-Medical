@@ -5,47 +5,6 @@ $(document).ready(function () {
 });
 
 
-// function validateSignup() {
-//     var username = document.getElementById("username");
-//     var email = document.getElementById("email");
-//     var password = document.getElementById("password");
-//     var confirmPassword = document.getElementById("confirmPassword");
-//     var valid = true;
-//     removeMessage();
-//     if(username.value.length == 0){
-//         // username.className += " wrong-input";
-//         username.nextElementSibling.innerHTML = "Username can't be blank"
-//         valid = false;
-//     }
-//     if(email.value.length == 0){
-//         // email.className += " wrong-input";
-//         email.nextElementSibling.innerHTML = "Username can't be blank"
-//         valid = false;
-//     }
-//     if(password.value.length < 8){
-//         // password.className += " wrong-input";
-//         password.nextElementSibling.innerHTML = "Passwords cannot be less than 8 characters"
-//         valid = false;
-//     }
-//     if(password.value != confirmPassword.value){
-//         // confirmPassword.className += " wrong-input";
-//         confirmPassword.nextElementSibling.innerHTML = "Password does not match"
-//         valid = false;
-//     }
-
-//     return valid;
-//   } 
-
-
-//   function removeMessage(){
-//       var errorParagraph = document.querySelectorAll(".error");
-//       [].forEach.call(errorParagraph, function(el){
-//           el.innerHTML = "";
-//       });
-//   }
-
-
-
 $(function() {
 
     $("#username_error").hide();
@@ -134,7 +93,7 @@ $(function() {
 
     function check_current_password() {
         var password_strength = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/);
-        
+
         if(password_strength.test($("#password").val())){
             $("#passwcurrent_password_errorord_error").hide();
         } else{
@@ -164,15 +123,11 @@ $(function() {
     });
 
     $("#loginForm").submit(function() {
-        // error_username = false;
         error_email = false;
         error_password = false;
-        // error_confirm_password = false;
 
-        // check_username();
         check_email();
         check_password();
-        // check_confirm_password();
 
         if (error_email == false && error_password == false){
             return true;
@@ -183,14 +138,11 @@ $(function() {
     });
 
     $("#changePasswordForm").submit(function() {
-        // error_username = false;
-        // error_email = false;
+
         error_password = false;
         error_confirm_password = false;
         error_current_password = false;
 
-        // check_username();
-        // check_email();
         check_password();
         check_confirm_password();
         check_current_password();
